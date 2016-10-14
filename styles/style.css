@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:900');
+
+html{
+    background: url("images/snowleopard.jpg") fixed;
+    background-size:cover;
+}
+
+.container{
+/*    background-color:#ffffff;
+*/    width:600px;
+    margin: 20px 15px 150px 100px;
+    padding:40px 50px 610px 20px;
+}
+
+.title-main{
+    border-bottom:0.5px solid #EBDA00;
+}
+
+h1{
+    padding-left:100px;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 90px;
+    line-height:10px;
+    font-weight:700;
+    color: #EBDA00;
+    margin: 70px 0 20px 0;
+}
+
+.accordion {
+    float:left;
+    position:relative;
+    display: flex;
+    flex-flow: column nowrap;
+/*    width:100%;
+*/    padding:20px;
+    line-height:1.5em;
+    font-family: 'Helvetica', sans-serif;
+    color: #1C1C1C;
+}
+
+#two{
+    padding:10px;
+}
+
+.accordion>.accordion-item {
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 3px 0 3px 0px;
+
+}
+
+.accordion-item>.item-content {
+    overflow: hidden;
+    display: none;
+    font-size: 14px;
+    position:relative;
+    padding-left:15px;
+    padding-right: 20px;
+    font-weight:300;
+}
+
+.accordion-item.open>.item-content {
+    overflow: hidden;
+    display: block;
+}
+
+.accordion-item>.item-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.accordion-item>.item-title:before {
+    content: "+";
+    line-height: inherit;
+    margin-right: 5px;
+    transition: transform 200ms;
+}
+
+.accordion-item.open>.item-title:before {
+    transform: rotate(90deg);
+}
+
+.too{
+    font-size: 1em;
+}
